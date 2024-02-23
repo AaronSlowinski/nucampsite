@@ -32,5 +32,23 @@ header h2 {
 }
 
 .navbar {
-     background-color: #901CAD;
+background-color: #901CAD;
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Set the text color to white */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc !important; /* Set the text color to a lighter shade on hover */
+}
+
+/* Navbar icon styles */
+.navbar-nav .nav-link i {
+    color: white; /* Set the icon color to white */
+}
+
+/* Navbar icon on hover styles */
+.navbar-nav .nav-link:hover i {
+    color: #ccc; /* Set the icon color to a lighter shade on hover */
 }
