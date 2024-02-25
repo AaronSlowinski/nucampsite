@@ -10,7 +10,6 @@
     
     <!--Addtional Bootstrap CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Nucamp: A Better Way To Camp</title>
 </head>
@@ -24,14 +23,20 @@
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <img src="img/img/logo.png" class="img-fluid" />
                 </div>
-
                 <div class="col">
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-            </div>  
-        </div>
+                <!-- New Header button Task 3-->
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" class="btn btn-lg btn-info text-white text-nowrap">Reserve Campsite </a>
+                </div>
+            </div>
+        </div>  
     </header>
+
+
+
 
     <!--Nav bar-->
 <nav class = "navbar navbar-expand-sm navbar-dar sticky-top">
@@ -71,7 +76,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
 		<!-- feature section -->
@@ -80,15 +84,21 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <!--task 1-->
+                    <div class="d-flex">
+                        <div class="align-self-center">
+                            <h3>React Lake Campground</h3>
+                            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        </div>
+                            <img class="ms-3 img-thumbnail" src="img/img/react-lake-thumb.jpg" alt="Lake" />
+                    </div>       
             </div>
         </section>
 
 		<!-- partner section -->
         <section class="row row-content align-item-center">
             <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class = "text-sm-end">Our Community Partners</h2>
+                <h2 class ="text-sm-end">Our Community Partners</h2>
             </div>
             <div class="col">
                 <div class="d-flex">
@@ -99,8 +109,54 @@
                     </div>
                 </div>
             </div>
-        </section>     
-    </main>
+        </section>
+
+
+<!--New Button form task 3-->
+
+<form id="reserveForm"></form>  
+
+<!--task 2 Intake form-->  
+
+    <section class="row row-content">
+        <div class="col-12 col-sm-9 mx-auto">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h3>Reserve a Campsite</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="numCampers" class="col-form-label col-sm-4">Number of Campers</label>
+                            <div class="col-sm-8">
+                                <select id="numCampers" name="numCampers" class="form-control">
+                                    <option>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="date" class="col-form-label col-sm-4">Date</label>
+                            <div class="col-sm-8">
+                                <input type="date" id="date" name="date" placeholder="mm-dd-yyyy" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>   
+</main>
 
     <!-- footer -->
     <footer>
