@@ -52,3 +52,9 @@ background-color: #901CAD;
 .navbar-nav .nav-link:hover i {
     color: #ccc; /* Set the icon color to a lighter shade on hover */
 }
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
